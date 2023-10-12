@@ -1,12 +1,16 @@
-<div id="header">
-    <header>Viral</header>
-</div>
-<div id="login">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
+<div class="container">
+	<div class="card">
+		<div class="card-body">
+			<h2>Login</h2>
+			<div class="text-box">
+				<input type="email" class="form-control" placeholder="Email">
+			</div>
+			<div class="text-box">
+				<input type="password" class="form-control" placeholder="Password">
+			</div>
+			<button type="submit">Login</button>
+			<p class="act-recovery">Don't have an account? <a routerLink="/sign-up" routerLinkActive="mat-accent">Sign Up</a></p>
+			<p><a href="#">Forgot password?</a></p>
+		</div>
+	</div>
 </div>
