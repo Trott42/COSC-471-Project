@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css">
-    <title>Homepage</title>
-</head>
-<body>
-    <div class="header">
-        <h1>My Social Platform</h1>
+<div class="header">
+    <h1>VIRAL</h1>
+  </div>
+  <div class="tweet-container">
+    <h2>Recent Tweets</h2>
+    <div class="tweet" *ngFor="let tweet of tweets">
+      <p><strong>{{ tweet.user }}:</strong> {{ tweet.text }}</p>
     </div>
-    <div class="tweet-container">
-        <h2>Recent Tweets</h2>
-        <div class="tweet">
-            <p><strong>User 1:</strong> This is a sample tweet. #CoolStuff</p>
-        </div>
-        <div class="tweet">
-            <p><strong>User 2:</strong> Another sample tweet here. #Amazing</p>
-        </div>
-        <!-- Add more tweets here as needed -->
-
-        <h2>Compose a Tweet</h2>
-        <div class="tweet-form">
-            <textarea rows="4" cols="50" placeholder="What's on your mind?"></textarea>
-            <br>
-            <button class="tweet-button">Tweet</button>
-        </div>
+  
+    <h2>Compose a Tweet</h2>
+    <div class="tweet-form">
+      <textarea rows="4" cols="50" placeholder="What's on your mind?" [(ngModel)]="newTweetText"></textarea>
+      <br>
+      <button class="tweet-button" (click)="postTweet()">Tweet</button>
     </div>
-</body>
-</html>
+  </div>
+  
