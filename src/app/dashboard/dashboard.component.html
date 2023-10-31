@@ -1,33 +1,22 @@
-<style>
-    /* Style for the "VIRAL" heading */
-    h2 {
-      font-size: 48px; /* You can adjust the size to your preference */
-      font-weight: bold; /* Make it bold for better emphasis */
-      color: purple; /* Choose a custom color */
-      text-transform: uppercase; /* Uppercase text for a better look */
-      font-family: 'Arial', sans-serif; /* Choose a suitable font family */
-    }
-  </style>
-  <div class="dashboard">
-      <div class="sidebar">
-          <div class="logo">
-              <img src="assets/viralLogo.png" alt="Your Logo" />
-          </div>
-          <ul>
+<div class="dashboard">
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/viralLogo.png" alt="Your Logo" />
+        </div>
+        <ul>
             <li><a href="/home">Home</a></li>
             <li><a href="/profile">Profile</a></li>
             <li><a href="/messages">Messages</a></li>
             <li><a href="/settings">Settings</a></li>
         </ul>
-      </div>
-      <div class="content">
-          <router-outlet></router-outlet>
-          <div class="authentication">
-              <h2>VIRAL</h2>
-              <p>Log in or Sign up to get started:</p>
-              <a class="login-button" href="/login">Log In</a>
-              <a class="signup-button" href="/signup">Sign Up</a>
-          </div>
-      </div>
-  </div>
-  
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+        <div class="authentication">
+            <h2 class="dashboard-title">Welcome to VIRAL</h2>
+            <p class="dashboard-subtitle">Log in or Sign up to get started</p>
+            <a class="login-button" href="/login">Log In</a>
+            <a class="signup-button" href="/signup">Sign Up</a>
+        </div>
+    </div>
+</div>
