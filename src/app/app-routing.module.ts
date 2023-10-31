@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './dashboard/home/home.component';
-import { ProfileComponent } from './dashboard/profile/profile.component';
-import { MessagesComponent } from './dashboard/messages/messages.component';
-import { SettingsComponent } from './dashboard/settings/settings.component';
-
+import { HomeComponent } from './comp/home/home.component';
+import { ProfileComponent } from './comp/profile/profile.component';
+import { MessagesComponent } from './comp/messages/messages.component';
+import { SettingsComponent } from './comp/settings/settings.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignupComponent } from './comp/signup/signup.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', redirectTo: 'dashboard/home', pathMatch: 'full' },
-  { path: 'dashboard/home', component: HomeComponent },
-  { path: 'dashboard/profile', component: ProfileComponent },
-  { path: 'dashboard/messages', component: MessagesComponent },
-  { path: 'dashboard/settings', component: SettingsComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'messages', component: MessagesComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'signup', component: SignupComponent },
   ];
 
 @NgModule({

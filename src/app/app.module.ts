@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './dashboard/home/home.component';
-import { ProfileComponent } from './dashboard/profile/profile.component';
-import { MessagesComponent } from './dashboard/messages/messages.component';
-import { SettingsComponent } from './dashboard/settings/settings.component';
-import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './comp/home/home.component';
+import { ProfileComponent } from './comp/profile/profile.component';
+import { MessagesComponent } from './comp/messages/messages.component';
+import { SettingsComponent } from './comp/settings/settings.component';
+import { SignupComponent } from './comp/signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SignupComponent } from './signup/signup.component';
     ProfileComponent,
     MessagesComponent,
     SettingsComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
