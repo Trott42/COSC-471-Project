@@ -1,0 +1,28 @@
+<div class="authentication">
+    <h2>Sign Up</h2>
+    <p>Create an account to get started:</p>
+    <!-- Sign Up Form -->
+    <form (ngSubmit)="signUp()" #signupForm="ngForm" novalidate>
+      <div class="form-group">
+        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="First name" [(ngModel)]="fullName" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Last name" [(ngModel)]="fullName" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+        <input type="text"  formControlName="phone" inputmode="numeric" class="form-control" placeholder="(XXX) XXX-XXXX"  mask="(000) 000-0000">
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control" placeholder="Confirm password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a routerLink="/login">Log In</a></p>
+  </div>
+  

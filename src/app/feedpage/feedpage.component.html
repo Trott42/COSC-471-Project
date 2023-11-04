@@ -1,0 +1,19 @@
+<div class="dashboard">
+    <div class="sidebar">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/messages">Messages</a></li>
+            <li><a href="/settings">Settings</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+        <div class="authentication">
+            <h2 class="dashboard-title">Welcome to VIRAL</h2>
+            <p class="dashboard-subtitle">Log in or Sign up to get started</p>
+            <a class="login-button" href="/login">Log In</a>
+            <a class="signup-button" href="/signup">Sign Up</a>
+        </div>
+    </div>
+</div>

@@ -37,10 +37,7 @@
           border-radius: 5px;
         }
       }
-      button:hover {
-        color: black;
-        background: rgb(61, 57, 116);
-    } 
+  
       button {
         padding: 10px 20px;
         background-color: #cc29cc;
@@ -52,6 +49,11 @@
         transition: background-color 0.3s;
       }
     }
+
+    button:hover {
+        color: black;
+        background: rgb(61, 57, 116);
+    } 
   
     a {
       font-size: 14px;
