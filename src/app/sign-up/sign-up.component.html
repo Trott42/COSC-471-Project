@@ -2,27 +2,27 @@
     <h2>Sign Up</h2>
     <p>Create an account to get started:</p>
     <!-- Sign Up Form -->
-    <form (ngSubmit)="signUp()" #signupForm="ngForm" novalidate>
+    <form  #signupForm="ngForm" novalidate>
       <div class="form-group">
-        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="First name" [(ngModel)]="fullName" required>
+        <input type="text" id="fullName" name="firstName" class="form-control" placeholder="First name"  required>
       </div>
       <div class="form-group">
-        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Last name" [(ngModel)]="fullName" required>
+        <input type="text" id="fullName" name="lastName" class="form-control" placeholder="Last name"  required>
       </div>
       <div class="form-group">
-        <input type="email" id="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="email" required>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email"  required>
       </div>
       <div class="form-group">
-        <input type="text"  formControlName="phone" inputmode="numeric" class="form-control" placeholder="(XXX) XXX-XXXX"  mask="(000) 000-0000">
+        <input type="text"  inputmode="numeric" class="form-control" placeholder="(XXX) XXX-XXXX"  mask="(000) 000-0000">
       </div>
       <div class="form-group">
-        <input type="password" id="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password" required>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password"  required>
       </div>
       <div class="form-group">
-        <input type="password" id="password" name="password" class="form-control" placeholder="Confirm password" [(ngModel)]="password" required>
+        <input type="password" id="confimPassword" name="confirmPassword" class="form-control" placeholder="Confirm password"  required>
       </div>
-      <button type="submit">Sign Up</button>
+      <button (click)="signUp()" type="submit">Sign Up</button>
     </form>
     <p>Already have an account? <a routerLink="/login">Log In</a></p>
-  </div>
+</div>
   

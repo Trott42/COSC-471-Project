@@ -8,14 +8,12 @@ import { Router } from '@angular/router';
 })
 export class SignUpComponent {
   constructor(private router: Router) {}
-  fullName: string = '';
-  email: string = '';
-  password: string = '';
+
   signUp() {
     // Handle the sign-up logic here
     // You can make an HTTP request to your server or perform any necessary actions.
     
     // After successful sign-up, navigate to the dashboard or another page as needed.
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/feedpage']);  
   }
 }
